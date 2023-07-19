@@ -1,0 +1,48 @@
+name: Generic Issue
+description: Unsure what to pick? Open a generic issue here.
+title: ""
+labels: ["bug", "triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening an issue!
+        If you need help or have a question, use Discussions instead.
+        If you know where your issue belongs, please open it in the respective repository.
+  - type: input
+    id: context
+    attributes:
+      label: Context
+      description: Is there any context (existing issues, discussions, blog posts, ...)
+      placeholder: link additional context here
+    validations:
+      required: false
+  - type: textarea
+    id: body
+    attributes:
+      label: Description
+      description: Describe your matter here.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      options:
+        - label: I made sure that no other fits this matter
+          required: true
