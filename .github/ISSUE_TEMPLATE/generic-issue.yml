@@ -1,6 +1,6 @@
 name: Generic Issue
 description: Unsure what to pick? Open a generic issue here.
-title: ""
+title: Generic Issue
 labels: ["Status ✨ New"]
 assignees:
   - SIMULATAN
@@ -10,7 +10,7 @@ body:
     attributes:
       value: |
         Thanks for opening an issue!
-        If you need help or have a question, use Discussions instead.
+        If you need help or have a question, use [Discussions](https://github.com/orgs/QuillORM/discussions) instead.
         If you know where your issue belongs, please open it in the respective repository.
   - type: input
     id: context
